@@ -1,0 +1,33 @@
+@import '_theme';
+
+
+
+
+
+
+
+$menu-height: 10px;
+
+.bottom-menu {
+  position: fixed;
+  margin-top: -$menu-height;
+  width: 100%;
+  height: $menu_height;
+  font-size: $menu-height * 0.8;
+  display: flex;
+  flex-flow: row, space-between;
+  // background: rgb(221, 221, 131);
+
+  &>* {
+    display: flex;
+    width: 100%;
+
+    &:last-child {
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+  }
+
+
+}
